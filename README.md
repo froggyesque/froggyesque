@@ -1,4 +1,4 @@
-## Hi there 👋
+## Hello World 👋 This is a personal project documenting all of the knowledge that I have learned throughout my existence. 
 
 <!--
 **froggyesque/froggyesque** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
