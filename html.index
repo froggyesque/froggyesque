@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Welcome</title></head>
+<body>
+  <h1>Welcome to my Knowledge Site</h1>
+  <ul>
+    <li><a href="/biology/">Biology</a></li>
+    <li><a href="/engineering/">Engineering</a></li>
+    <!-- Add other categories here -->
+  </ul>
+</body>
+</html>
