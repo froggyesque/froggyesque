@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Knowledge Repository</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #fff;
+      color: #111;
     }
     header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 20px 0;
+      padding: 60px 20px;
       text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+    header h1 {
+      font-size: 2.5em;
+      letter-spacing: 0.05em;
+      margin: 0;
+      color: #000;
     }
     main {
-      max-width: 800px;
-      margin: 20px auto;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    h1, h2 {
-      color: #4CAF50;
+    .card {
+      padding: 30px 20px;
+      background: #f9f9f9;
+      text-align: center;
+      transition: transform 0.3s, background 0.3s;
     }
-    ul {
-      list-style-type: none;
-      padding: 0;
+    .card:hover {
+      transform: translateY(-5px);
+      background: #ececec;
     }
-    li {
-      margin: 10px 0;
-    }
-    a {
+    .card a {
       text-decoration: none;
-      color: #4CAF50;
-      font-weight: bold;
+      color: #000;
+      font-size: 1.1em;
+      font-weight: lighter;
     }
-    a:hover {
+    .card a:hover {
       text-decoration: underline;
     }
   </style>
@@ -49,18 +54,12 @@
 <body>
   <header>
     <h1>My Knowledge Repository</h1>
-    <p>Documenting everything I learn</p>
   </header>
-
   <main>
-    <h2>Categories</h2>
-    <ul>
-      <li><a href="biology/">Biology</a></li>
-       <li><a href="philosophy/">Philosophy</a></li>
-  <li><a href="engineering/">Engineering</a></li>
-  <li><a href="art/">Art</a></li>
-      <!-- Add more categories here -->
-    </ul>
+    <div class="card"><a href="biology/">Biology</a></div>
+    <div class="card"><a href="philosophy/">Philosophy</a></div>
+    <div class="card"><a href="engineering/">Engineering</a></div>
+    <!-- Add more categories similarly -->
   </main>
 </body>
 </html>
